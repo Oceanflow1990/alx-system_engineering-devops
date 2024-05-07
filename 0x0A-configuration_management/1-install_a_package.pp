@@ -1,7 +1,5 @@
-#!/usr/bin/pup
-#@ install a specific ersion of flask {2.1.0)
-pacckage {'flask':
-	ensure => '2.1.0,
-	povider => 'pip'
-}
+# install puppet-lint -v 2.5.0
 
+exec { 'puppet-lint':
+  command => '/usr/bin/apt-get -y install puppet-lint -v 2.5.0',
+}
